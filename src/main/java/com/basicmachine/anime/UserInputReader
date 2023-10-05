@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class UserInputReader {
+    public static long readUserIdFromConsole() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter user ID: ");
+        long userId = scanner.nextLong();
+        scanner.close();
+        return userId;
+    }
+}
